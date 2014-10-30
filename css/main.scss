@@ -244,6 +244,26 @@ nav {
 	}
 	// /.getStarted-btn
 }
+
+nav.fixed {
+	float: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 20px;
+	background: rgba(0,0,0,0.7);
+	display:none;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+	z-index: 100;
+	.menu {
+		float: right;
+		width: 30px;
+		height: 30px;
+		background: #fff;
+	}
+}
 // /.nav
 
 // HOME

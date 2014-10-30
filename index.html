@@ -73,6 +73,30 @@
 		</div><!-- /.wrapper -->
 	</div><!-- /.bkg -->
 
+	<nav class="fixed" id="fixed">
+	<!-- <div class="menu"></div> -->
+		<ul>
+			<li>
+				<a href="#home" class="smoothScroll">Home</a>
+			</li>
+			<li>
+				<a href="#services" class="smoothScroll">Services</a>
+			</li>
+			<li>
+				<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			</li>
+			<li>
+				<a href="#about" class="smoothScroll">About</a>
+			</li>
+			<li>
+				<a href="#contact" class="smoothScroll">Contact</a>
+			</li>
+			<li>
+				<a href="#" class="getStarted-btn">Get started</a>
+			</li>
+		</ul>
+	</nav>
+
 	<div class="bkg books" id="more">
 		<div class="wrapper clearfix">
 			<div class="cushion">
@@ -892,38 +916,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/jquery.smooth-scroll.js"></script>
 	<script src="js/modernizr.custom.63321.js"></script>
+	<script src="js/stkr.js"></script>
+	<script src="js/script.js"></script>
 
-	<script>
-	$(document).ready(function() {
-		$('a.smoothScroll').smoothScroll();
-		$('a.more').smoothScroll();
-		$('.drop-down').hide();
-		$('.close').hide();
-		$('.expand').click(function(){
-			$('.drop-down').show();
-			$('.close').show();
-			$(this).hide();
-		});
-		$('.close').click(function(){
-			$('.drop-down').hide();
-			$('.expand').show();
-			$('.close').hide();
-		});
-		$('.wordpress').click(function(){
-			$('div#wordpress').hide();
-		});
-		$('.photoshop').click(function(){
-			$('div#photoshop').hide();
-		});
-		$('.unbounce').click(function(){
-			$('div#unbounce').hide();
-		});
-		$('.no-filter').click(function(){
-			$('div.work.all').show();
-		});
 
-	});
-	</script>
 	
 </body>
 </html>

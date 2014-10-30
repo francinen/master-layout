@@ -335,7 +335,7 @@
 // /680px
 
 @media all and (max-width: 620px) {
-	nav {
+	header nav {
 		padding: 0; 
 		li {
 			padding: 13px 0;
@@ -351,6 +351,22 @@
 		a {
 			font-size: 22px;
 			padding: 8px 15px;
+		}
+	}
+	.home .getStarted {
+		display: none
+	}
+	.scroll {
+		position: relative;
+		top: 10px;
+	}
+	nav.fixed {
+		visibility: visible;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		a {
+			font-size: 14px;
+			padding: 8px 8px;
 		}
 	}
 	div.col-7, div.col-6 {
@@ -477,6 +493,21 @@
 }
 // /590px
 
+@media all and (max-width: 525px){
+	nav.fixed {
+		display: block;
+		padding-left: 5px;
+		padding-right: 5px;
+		a {
+			font-size: 14px;
+			padding: 4px;
+		}
+		a.getStarted-btn {
+			padding: 8px;
+		}
+	}
+}
+
 @media all and (max-width: 500px) {
 	div.posts .post {
 		&:nth-child(2), &:last-child {
@@ -568,6 +599,17 @@
 
 //iPhone 4 Portrait
 @media all and (max-width: 400px) {	
+	nav.fixed {
+		padding-left: 2px;
+		padding-right: 2px;
+		a {
+			font-size: 12px;
+			padding: 4px;
+		}
+		a.getStarted-btn {
+			padding: 8px;
+		}
+	}
 	section.services div.col-7,
 	section.blog div.col-7,
 	div.col-7, div.col-6 {

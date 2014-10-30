@@ -267,7 +267,7 @@ section p {
 }
 
 .bkg.white {
-  background: white;
+  background: #fff;
 }
 
 .bkg.grey {
@@ -287,7 +287,7 @@ header {
 }
 .name h1 {
   margin-bottom: 0;
-  color: white;
+  color: #fff;
   font-size: 32px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -331,7 +331,7 @@ nav a {
   border: 1px solid rgba(255, 255, 255, 0);
 }
 nav a:hover {
-  color: white;
+  color: #fff;
   border: 1px solid white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -352,6 +352,26 @@ nav a.getStarted-btn:hover {
   transition: background 0.1s;
 }
 
+nav.fixed {
+  float: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  z-index: 100;
+}
+nav.fixed .menu {
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+}
+
 section.home {
   display: inline;
   float: left;
@@ -366,7 +386,7 @@ section.home {
 }
 section.home h2 {
   font-size: 48px;
-  color: white;
+  color: #fff;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -649,7 +669,7 @@ section.support {
 }
 section.support h2 {
   font-size: 30px;
-  color: white;
+  color: #fff;
   font-weight: 300;
   letter-spacing: 1.5px;
   margin: 0;
@@ -1730,23 +1750,42 @@ footer h6.copy {
   }
 }
 @media all and (max-width: 620px) {
-  nav {
+  header nav {
     padding: 0;
   }
-  nav li {
+  header nav li {
     padding: 13px 0;
     width: 100%;
   }
-  nav li:last-child {
+  header nav li:last-child {
     padding-top: 20px;
   }
-  nav li:last-child a.getStarted-btn {
+  header nav li:last-child a.getStarted-btn {
     margin-left: 0;
     font-size: 20px;
   }
-  nav a {
+  header nav a {
     font-size: 22px;
     padding: 8px 15px;
+  }
+
+  .home .getStarted {
+    display: none;
+  }
+
+  .scroll {
+    position: relative;
+    top: 10px;
+  }
+
+  nav.fixed {
+    visibility: visible;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  nav.fixed a {
+    font-size: 14px;
+    padding: 8px 8px;
   }
 
   div.col-7, div.col-6 {
@@ -1859,6 +1898,20 @@ footer h6.copy {
     padding-bottom: 0;
   }
 }
+@media all and (max-width: 525px) {
+  nav.fixed {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  nav.fixed a {
+    font-size: 14px;
+    padding: 4px;
+  }
+  nav.fixed a.getStarted-btn {
+    padding: 8px;
+  }
+}
 @media all and (max-width: 500px) {
   div.posts .post:nth-child(2), div.posts .post:last-child {
     width: 100%;
@@ -1929,6 +1982,18 @@ footer h6.copy {
   }
 }
 @media all and (max-width: 400px) {
+  nav.fixed {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  nav.fixed a {
+    font-size: 12px;
+    padding: 4px;
+  }
+  nav.fixed a.getStarted-btn {
+    padding: 8px;
+  }
+
   section.services div.col-7,
   section.blog div.col-7,
   div.col-7, div.col-6 {
@@ -1978,3 +2043,5 @@ footer h6.copy {
     padding-left: 0;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
