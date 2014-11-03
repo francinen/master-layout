@@ -1,0 +1,36 @@
+section.home {
+	@include column(10);
+	@include push(1);
+	display: block;
+	float: none;
+	border: $guide;
+	text-align: center;
+	p {
+		font-size: 20px;
+		color: #8a97a5;
+	}
+	h2 {
+		font-size: 48px;
+		color: $white;
+		padding: 10px;
+	}
+}
+
+div.getStarted {
+	margin: 40px 0;
+	a {
+		@include getStarted;
+		&:hover {
+			@include getStarted-hover;
+		}
+	}
+}
+
+.scroll {
+	padding-bottom: 20px;
+	width: 20%;
+	margin: auto;
+	border: $guide;
+	text-align: center;
+	display: inline-block;
+}

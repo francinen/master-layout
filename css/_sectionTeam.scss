@@ -1,0 +1,105 @@
+
+// OUR TEAM
+
+.ourTeam {
+	.staff-members {
+		margin: 58px 0 56px 0;
+	}
+}
+// /.ourTeam
+
+.member {
+	width: 22%;
+	float: left;
+	margin-right: 2.667%;
+	margin-left: 0;
+	text-align: center;
+	&:last-child {
+		margin-right: 0;
+	}
+	.profile-img {
+		width: 180px;
+		height: 180px;
+		background: #f9f9f9;
+		border: 7px solid #f8f1f1;
+		border-radius: 100%;
+		margin: 0 auto;
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 300;
+		color: #505050;
+		text-transform: capitalize;
+		margin: 0;
+		padding: 22px 0 0 0;
+	}
+	h4 {
+		margin: 8px 0 30px 0;
+		font-size: 13px;
+		font-weight: 300;
+		color: #9e9e9e;
+		padding: 0;
+	}
+	ul {
+		padding: 0;
+		margin: 20px 0;
+		li {
+		list-style-type: none;
+		text-align: center;
+		display: inline-block;
+		margin-right: $gutter-width;
+			&:last-child {
+				margin-right: 0;
+			}
+			svg {
+				fill: #b7b7b7;
+				width: 24px;
+				height: 24px;
+				&:hover {
+					@include hover(all,0.3s)
+				}
+			}
+			svg.facebook:hover, svg.facebook:active {
+				fill: #3b5998;
+			}
+			svg.twitter:hover, svg.twitter:active {
+				fill: #00acee;
+			}
+			svg.forrst:hover, svg.forrst:active {
+				fill: #5b9a68;
+			}
+			svg.dribbble:hover,svg.dribbble:active {
+				fill: #ea4c89;
+			}
+		}
+	}
+	// /ul
+}
+// /.member
+
+div.member.join {
+	div.profile-img {
+	background: $teal;
+	position: relative;
+		svg.plus {
+			position: absolute;
+			top: 22%;
+			left: 35%;
+			fill: #fff;
+			width: 30%;
+		}
+	}
+	// /.profile-img
+	a.apply {
+		@include grey-btn;
+		&:hover {
+			@include teal-btn;
+			@include hover(all,0.3s);
+		}
+		&:active {
+			@include teal-btn;
+		}
+	}
+	// /.apply
+}
+// /.member.join

@@ -1,0 +1,71 @@
+header {
+	// @include row();
+	padding: 0;
+	position: relative;
+}
+
+.name {
+	display: inline-block;
+	float: left;
+	margin-right: 0;
+	border: $guide;
+	svg.square {
+		width: 10px;
+		fill: $teal;
+		position: relative;
+		bottom: -3px;
+	}
+	h1 {
+		margin-bottom: 0;
+		color: $white;
+		font-size: 32px;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	h3 {
+		margin-top: 0;
+		color: #7e8a98;
+		font-weight: 300;
+		font-size: 11px;
+	}
+}
+
+nav {
+	margin: 0;
+	padding: 39px 0 0 0;
+	float: right;
+	border: $guide;
+	ul {	
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			list-style-type: none;
+		}
+	}
+
+	// /ul
+	
+	// /.getStarted-btn
+}
+
+nav.fixed {
+	float: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background: rgba(0,0,0,0.7);
+	display:none;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+	z-index: 100;
+	.menu {
+		float: right;
+		width: 30px;
+		height: 30px;
+		background: #fff;
+	}
+}

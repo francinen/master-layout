@@ -1,0 +1,50 @@
+.highlights {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	padding: 43px 0px;
+	.highlight {
+		width: 25%;
+		height: 112px;
+		float: left;
+		margin: 0 auto;
+		border-right: 1px solid #b8b8b8;
+		padding: 22px 0 0 0;
+		text-align: center;
+		&:last-child {
+			border: none;
+		}
+		span {
+			display: inline-block;
+			width: 97%;
+			border: $guide;
+		}
+		h2 {
+			margin: 0 1% 0 0;
+			padding: 0;
+			display: inline-block;
+			width: auto;
+			font-size: 48px;
+			font-weight: 300;
+			color: $teal;
+			letter-spacing: 1.2px;
+			text-align: center;
+		}
+		h3 {
+			display: inline-block;
+			width: auto;
+			padding: 0;
+			margin: 7px 0 0 0;
+			font-size: 18px;
+			font-weight: 300;
+			color: #b0b0b0;
+			letter-spacing: 1.2px;
+			line-height: 20px;
+			text-transform: capitalize;
+			text-align: left;
+			border: $guide;
+		}
+	}
+	// /.highlight
+}
+// /.highlights

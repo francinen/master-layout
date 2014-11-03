@@ -1,0 +1,33 @@
+section.services {
+	padding-bottom: 30px;
+	div.col-7 {
+		margin-bottom: 63px;
+	}
+	.featured-services {
+		width: 100%;
+		display: block;
+		float: none;
+		.feature {
+		width: 32.99%;
+		display: inline-block;
+		margin: 0 0 52px 0;
+		border: $guide;
+		}
+		.description {
+			padding: 0 0 0 80px;
+			h3 {
+				color: #444444;
+				font-size: 20px;
+				font-weight: 300;
+				margin: 0;
+			}
+			p {
+				font-size: 12px;
+				color: #bababa;
+				line-height: 20px;
+				margin: 0;
+				padding-right: 10%;
+			}
+		}
+	}
+}

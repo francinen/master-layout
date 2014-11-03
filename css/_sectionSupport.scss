@@ -1,0 +1,32 @@
+section.support {
+	@include column(10);
+	@include push(1);
+	display: block;
+	float: none;
+	text-align: center;
+	padding-top: 58px;
+	h2 {
+		font-size: 30px;
+		color: $white;
+		letter-spacing: 1.5px;
+		margin: 0;
+		margin-bottom: 16px;
+		span {
+			text-transform: uppercase;
+		}
+	}
+	p {
+		font-size: 18px;
+		color: #999999;
+		font-weight: 300;
+		margin: 0;
+	}
+	a.getStarted {
+		margin: 26px 0 55px 0;
+		display: inline-block;
+		@include getStarted;
+		&:hover, &:active {
+			@include getStarted-hover;
+		}
+	}
+}

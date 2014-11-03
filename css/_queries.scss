@@ -51,12 +51,16 @@
 	.home h2 {
 		line-height: 56px;
 	}
+	div.books {
+		padding-top: 10px;
+	}
 	div.cushion {
 		width: 35%;
 	}
 	section.meet {
 		width: 60%;
-		padding: 3% 0 0 2%;
+		padding: 10px 0;
+
 	}
 	section.meet p {
 		padding-top: 10px;
@@ -87,11 +91,11 @@
 // /900px
 
 @media all and (max-width: 880px) {
-	.services {
+	section.services {
 		div.col-7 {
 			width: 70%;
 		}
-		.featured-services .feature {
+		.featured-services .feature{
 			width: 49%;
 			margin-bottom: 20px;
 			margin-right: 0;
@@ -137,7 +141,7 @@
 	}
 	section.meet {
 		width: 100%;
-		padding: 7% 0 4% 0;
+		padding: 20px 0;
 		text-align: center;
 	}
 	section.meet h2 { 
@@ -603,11 +607,11 @@
 		padding-left: 2px;
 		padding-right: 2px;
 		a {
-			font-size: 12px;
-			padding: 4px;
+			font-size: 16px;
+			padding: 6px;
 		}
 		a.getStarted-btn {
-			padding: 8px;
+			display: none;
 		}
 	}
 	section.services div.col-7,
@@ -666,6 +670,6 @@
 			padding-left: 0;
 		}
 	}
+	
 }
-// /345px
 

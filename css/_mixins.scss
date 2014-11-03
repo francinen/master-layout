@@ -1,0 +1,68 @@
+@mixin section-h2 {
+	margin-top: 18%;
+	margin-bottom: 24px;
+	font-size: 28px;
+	font-weight: 300;
+	color: #828282;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	line-height: 1.4;
+}
+
+@mixin bkg-settings {
+	background: no-repeat center center;
+}
+
+@mixin cover-bkg {
+	width: 100%;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin hover($property, $sec) {
+	-webkit-transition: $property $sec;
+	transition: $property $sec;
+}
+
+@mixin grey-btn {
+	padding: 9px 36px;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #b8b8b8;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+@mixin teal-btn {
+	color: $teal;
+	border: 1px solid $teal;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+@mixin getStarted {
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	padding:10px 25px;
+	border-radius: 3px;
+	border: 1px solid #fff;
+}
+
+@mixin getStarted-hover {
+	color: $teal;
+	border-color: $teal;
+	background: #fff;
+	@include hover(all, 0.3s);
+}
+
+@mixin focus {
+	border: 1px solid $teal;
+	box-shadow: none;
+	outline:none;
+}
+@mixin focus-btn {
+	outline: 1px solid #b0b0b0;
+}

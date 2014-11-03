@@ -1,0 +1,31 @@
+body {
+	height: 100%;
+  	font-weight: 300;
+	font-size: 13px;
+	font-family: $basefontfamily;
+	background: none;	
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+	border: $guide;
+}
+
+div.col-7 {
+	@include column(7);
+	display: block;
+	float: none;
+	margin: 0;
+}
+
+div.col-6 {
+	@include column(6);
+	display: block;
+	float: none;
+	margin: 0;
+}
+
+

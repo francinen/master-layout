@@ -1,0 +1,94 @@
+
+// CONTACT
+
+section.contactInfo {
+	padding-top: 77px;
+	div.left {
+		width: 50%;
+		float: left;
+		margin: 0;
+		padding-right: 20px;
+		div.map {
+			width: 100%;
+			overflow: hidden;
+			iframe {
+				width: 480px;
+				height: 600px;
+			}
+		}
+		p {
+			font-size: 16px;
+			color: #b8b8b8;
+			font-weight: 300;
+		}
+		ul {
+			padding: 0;
+		}
+		li {
+			list-style-type: none;
+			font-size: 14px;
+			margin: 0 0 20px 0;
+			padding: 0;
+			h3 {
+				color: $teal;
+				font-weight: 300;
+				display: inline-block;
+				margin: 0;
+			}
+			p {
+				color: #b8b8b8;
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
+	// /.left
+	div.right {
+		width: 50%;
+		margin: 0;
+		padding: 0 0 77px 0;
+		float: right;
+		h2 {
+			margin-top: 0;
+		}
+		form {
+			padding-top: 40px;
+			label {
+				font-size: 12.9px;
+				color: $teal;
+				font-weight: 300;
+				display: block;
+			}
+			input[type=text], textarea {
+				width: 100%;
+				padding: 17px;
+				margin: 18px 0 27px 0;
+				border: 1px solid #eeeeee;
+				border-radius: 5px;
+				color: #b8b8b8;
+				font-size: 16px;
+				&:focus {
+					@include focus;
+				}
+			}
+		}
+		// /form
+		input[type=submit] {
+			display: block;
+			float: right;
+			background: none;
+			color: #b8b8b8;
+			@include grey-btn;
+			&:hover {
+				@include teal-btn;
+				@include hover(all,0.3s);
+			}
+			&:focus {
+				@include focus-btn;
+			}
+		}
+		// /submit
+	}
+	// /.right
+}
+// /.contact

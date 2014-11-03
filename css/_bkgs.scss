@@ -1,0 +1,33 @@
+.bkg.home {
+	@include bkg-settings;
+	@include cover-bkg;
+	background-image: url(../assets/backgrounds/bg1.jpg);
+	background-attachment: fixed;
+}
+
+.books {
+	background: #eeeeee;
+}
+.bkg.polygon {
+	@include bkg-settings;
+	@include cover-bkg;
+	background-image: url(../assets/backgrounds/bg2.jpg);
+}
+
+.bkg.darkblue {
+	background: #263845;
+}
+
+.bkg.twitter {
+	@include bkg-settings;
+	@include cover-bkg;
+	background-image: url(../assets/backgrounds/bg4.jpg);
+}
+
+.bkg.white {
+	background: $white;
+}
+
+.bkg.grey {
+	background: $bkgGrey;
+}

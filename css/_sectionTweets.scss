@@ -1,0 +1,44 @@
+// TWEETS
+
+section.tweets {
+	width: 60%;
+	margin: 0 auto;
+	padding: 70px 0;
+	text-align: center;
+	svg {
+		fill: #fff;
+		width: 95px;
+		padding-bottom: 36px;
+	}
+	h2 {
+		font-size: 21px;
+		color: #ffffff;
+		margin: 0;
+		letter-spacing: 0.5px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.6;
+		color: #c6c6c6;
+		padding: 22px 0 24px 0;
+	}
+	h5, h6 {
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+	h5 {
+		font-size: 14.5px;
+		color: #ffffff;
+		font-weight: 300;
+	}
+	h6 {
+		font-size: 12px;
+		font-weight: 300;
+		color: $teal;
+		padding-top: 12px;
+	}
+}
+// /.tweets

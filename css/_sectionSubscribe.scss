@@ -1,0 +1,86 @@
+
+// SUBSCRIBE
+
+.subscribe {
+	padding: 52px 0 50px 0;
+	.container {
+		margin: 0 auto;
+		padding: 0 16.667%;
+	}
+	h2 {
+		font-size: 24px;
+		color: #aaaaaa;
+		margin: 0;
+		padding: 0;
+	}
+	form {
+		width: 100%;
+		margin-top: 20px;
+		.input-wrap {
+			position: relative;
+			label {
+				position: absolute;
+				top: -10px;
+				left: 24px;
+				z-index: 5;
+				svg {
+					width: 23px;
+					fill: #d4dadf;
+				}
+			}
+		}
+		// /.input-wrap
+		input[type=text] {
+			width: 70%;
+			padding: 18px 0 18px 66px;
+			margin-right: 2%;
+			border: none;
+			box-shadow: none;
+			background: #f8f8f8;
+			border-radius: 5px;
+			color: #b8b8b8;
+			font-size: 14.66px;
+			&::-webkit-input-placeholder {
+				color: #d4dadf;
+			}
+			&:focus {
+				@include focus;
+			}
+		}
+		// /input[type=text]
+		input[type=submit] {
+			width: 28%;
+			min-width: 100px;
+			max-width: 150px;
+			color: #fff;
+			text-align: center;
+			font-weight: 300;
+			font-size: 18px;
+			padding: 13px 0;
+			background: $teal;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 3px 0 #088871;
+			&:hover {
+				background: #009e81;
+				box-shadow: 0 3px 0 #004f40;
+				@include hover(all,0.3s)
+			}
+			&:active {
+				background: #009e81;
+				box-shadow: 0 3px 0 #004f40;
+			}
+			&:focus {
+				@include focus-btn;
+			}
+		}
+		// /input[type=submit]
+	}
+	// /form
+	p {
+		width: 60%;
+		font-size: 14.66px;
+		color: #9ba8b1;
+	}
+}
+// /.subscribe

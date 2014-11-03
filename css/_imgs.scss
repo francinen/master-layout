@@ -1,0 +1,22 @@
+img {
+	max-width: 100%;
+}
+
+.cushion {
+	img {
+		width: 100%;
+		position: relative;
+		bottom: -2px;
+	}
+}
+
+.featured-services {
+	img {
+		float: left;
+		width: 40%;
+		margin-right: 5%;
+		margin-bottom: 5px;
+		max-width: 80px;
+	}
+
+}
