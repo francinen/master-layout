@@ -3,15 +3,10 @@ $(function(){
 	$('a.more').smoothScroll();
 	$('.drop-down').hide();
 	$('.close').hide();
-	$('.expand').click(function(){
-		$('.drop-down').show();
-		$('.close').show();
-		$(this).hide();
-	});
-	$('.close').click(function(){
-		$('.drop-down').hide();
-		$('.expand').show();
-		$('.close').hide();
+	$('.filter').click(function(){
+		$('.drop-down').toggle();
+		$('.close').toggle();
+		$('.expand').toggle();
 	});
 	$('.wordpress').click(function(){
 		$('div#wordpress').hide();

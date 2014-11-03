@@ -211,6 +211,13 @@ $.fn.stkr = function(options){
 	};
 	
 	var checkUnstickSettings = function(){
+		if (settings.toggleFade && settings.toggleVisibility){
+			if (!originalPosition){
+				return $sticky.css({opacity: 0, position:'static'});
+			}else{
+				return $sticky.css({opacity: 0, position: originalPosition});
+			}
+		}
 		if (settings.toggleFade){
 			if (!originalPosition){
 				return $sticky.css({opacity: 0, position:'static'});
