@@ -1,5 +1,5 @@
 @mixin section-h2 {
-	margin-bottom: 0 0 24px;
+	margin: 0 0 25px;
 	font-size: 28px;
 	font-weight: 300;
 	color: #828282;
@@ -36,9 +36,27 @@
 
 @mixin teal-btn {
 	color: $teal;
+	background: none;
 	border: 1px solid $teal;
 	text-decoration: none;
 	font-weight: 300;
+}
+
+@mixin goToPage {
+	width: auto;
+	max-width: 240px;
+	float: right;
+	@include teal-btn;
+	margin: 40px 0;
+	padding: 0 17px;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	text-align: center;
+	&:hover {
+		background: #fff;
+	}
 }
 
 @mixin getStarted {

@@ -22,9 +22,6 @@ $(function(){
 	}
 	else{
 		$('#mobile-fixed').stkr({
-			startSticky: '#more',
-			toggleVisibility: true,
-			toggleFade: true,
 			stickyPosition: 'custom',
 			top: 0,
 			left: 0
@@ -38,8 +35,10 @@ $(function(){
 		var homeBottom = home.top+$('#home').height();
 		if (y > homeBottom) {
 			$('.scroll').find('object').removeClass('animated');
+			$('.top').css({'opacity':1});
 		}else{
 			$('.scroll').find('object').addClass('animated');
+			$('.top').css({'opacity':0});
 		}
 
 		var services = $('#services').position();
@@ -87,7 +86,13 @@ $(function(){
 		$('.mobile-nav').slideToggle('slow');
 	});
 	$('.mobile-nav').find('li').on('click',function(){
-		$('.mobile-nav').delay(600).slideToggle(700);
+		$('.mobile-nav').slideToggle(500);
+	});
+
+	$('.services').find('.expand').click(function(){
+		$('.featured-services').slideToggle();
+		$('#expand-icon, #expand-icon+span').toggle();
+		$('#close-icon, #close-icon+span').toggle();
 	});
 
 	$('.filter').click(function(){
@@ -95,6 +100,7 @@ $(function(){
 		$('.close').toggle();
 		$('.expand').toggle();
 	});
+
 	$('.wordpress').click(function(){
 		$('div#wordpress').hide();
 	});

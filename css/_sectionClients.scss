@@ -11,5 +11,15 @@ section.clients {
 			margin: 0;
 		}
 	}
+	.testimonial.mobile {
+		display: none;
+		float: none;
+		margin-top: 30px;
+	}
+	.viewClients {
+		margin: 0 auto;
+		@include goToPage;
+		display: none;
+	}
 }
 // /.clients

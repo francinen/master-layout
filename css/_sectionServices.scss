@@ -3,6 +3,26 @@ section.services {
 	div.col-7 {
 		margin-bottom: 63px;
 	}
+	.expand {
+		display: none;
+		@include goToPage;
+		max-width: none;
+		width: 200px;
+		outline: none;
+		text-align: left;
+		margin-top: 0;
+		span {
+			margin-left: 10px;
+		}
+		h4 {
+		display: inline-block;
+		
+		}
+	}  
+	#close-icon,
+	#close-icon + span {
+		display: none;
+	}
 	.featured-services {
 		width: 100%;
 		display: block;

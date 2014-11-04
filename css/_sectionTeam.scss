@@ -5,6 +5,10 @@
 	.staff-members {
 		margin: 58px 0 56px 0;
 	}
+	.goToPage {
+		display: none;
+		@include goToPage;
+	}
 }
 // /.ourTeam
 
@@ -85,8 +89,20 @@ div.member.join {
 			position: absolute;
 			top: 22%;
 			left: 35%;
-			fill: #fff;
+			fill: darken($teal,6);
 			width: 30%;
+			transform-origin: 50% 50%;
+			-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		}
+		&:hover {
+			background: lighten($teal,1.5);
+			svg.plus {
+				fill: lighten($teal,6);
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+			
 		}
 	}
 	// /.profile-img

@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	
 	<div class="bkg home" id="home">
 		<div class="wrapper">
 			<header class="clearfix">
@@ -96,6 +95,7 @@
 	</nav>
 
 	<nav class="mobile-fixed" id="mobile-fixed">
+	<a href="#home" class="smoothScroll top"><i class="fa fa-arrow-circle-o-up"></i><h3>Back to top</h3></a>
 	<div class="menu">
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Your_Icon" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 		<path d="M0,100.869"/>
@@ -140,11 +140,13 @@
 
 	<div class="bkg white">
 		<div class="wrapper" id="services">
-			<section class="services">
-				<div class="col-7">
+			<section class="services clearfix">
+				<div class="col-7 clearfix">
 					<h2>Our Services</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
+					<button class="expand"><i class="fa fa-chevron-down" id="expand-icon"></i><span><h4>View More</h4></span><i class="fa fa-chevron-up" id="close-icon"></i><span><h4>Close</h4></span></button>
+
 				<div class="featured-services clearfix">
 					<div class="feature clearfix">
 						<img src="assets/services/1.png" alt="">
@@ -200,11 +202,11 @@
 					<h2>Our blog</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
-				<div class="blogPage">
+				
 					<a href="#" class="blog">
 						<h4>Go to blog page</h4>
 					</a>
-				</div>
+				
 				<div class="posts clearfix">
 					<div class="post">
 						<div class="post-thumb">
@@ -259,6 +261,9 @@
 					<h2>Our portfolio</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
+				<a href="#" class="viewPortfolio">
+					<h4>View Portfolio</h4>
+				</a>
 				<div class="filter">						
 					<ul class="selected">
 						<li>All
@@ -452,7 +457,7 @@
 
 	<div class="bkg darkblue">
 		<div class="wrapper">
-			<section class="clients">
+			<section class="clients clearfix">
 				<div class="col-6">
 					<h2>Our awesome clients</h2>
 					<p>More than 50K happy customers with our services</p>
@@ -530,8 +535,6 @@
 								</div>
 							</div><!-- /.testimonial -->
 						</div><!-- /.testimonials -->
-
-						
 					</div>
 				</div>
 				<ol class="carousel-indicators">
@@ -551,17 +554,30 @@
 						</label>
 					</li>
 				</ol>
+					<div class="testimonial mobile">
+						<div class="client-photo">
+							<img src="assets/placeholders/profile.png">
+						</div>
+						<div class="quote">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
+							<h3>Michel Andrena</h3>
+							<h4>Company founder</h4>
+						</div>
+					</div><!-- /.testimonial -->
+					<a href="#" class="viewClients"><h4>Find out more</h4></a>
 			</section>
 		</div><!-- /.wrapper -->
 	</div><!-- /.bkg -->
 
 	<div class="bkg white">
 		<div class="wrapper" id="about">
-			<section class="ourTeam">
+			<section class="ourTeam clearfix">
 				<div class="col-6">
 					<h2>Our small team</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#" class="goToPage"><h4>See our team</h4></a>
 				</div>
+				
 				<div class="staff-members clearfix">
 					<div class="member">
 						<div class="profile-img" src="" alt=""></div>
@@ -823,11 +839,13 @@
 	<div class="bkg white">
 		<div class="wrapper" id="contact">
 			<section class="contactInfo clearfix">
+
 				<div class="left">
 					<div class="map">
 						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;ll=40.705216,-74.008092&amp;spn=0.002769,0.004157&amp;t=m&amp;z=18&amp;output=embed"></iframe>
 					</div>
 					<div class="contact-details">
+					<h2>Get in touch</h2>
 						<p>Here is some more information about us. You can get in touch with us any time you want.</p>
 						<ul>
 							<li>

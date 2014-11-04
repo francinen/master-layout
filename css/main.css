@@ -193,7 +193,7 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1000px;
   border: none;
 }
 
@@ -222,7 +222,7 @@ section {
 }
 
 section h2 {
-  margin-bottom: 0 0 24px;
+  margin: 0 0 25px;
   font-size: 28px;
   font-weight: 300;
   color: #828282;
@@ -238,6 +238,32 @@ section p {
   line-height: 24px;
   letter-spacing: 0.5px;
   margin: 0;
+}
+
+.goToPage {
+  width: auto;
+  max-width: 240px;
+  float: right;
+  color: #0bb697;
+  background: none;
+  border: 1px solid #0bb697;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 40px 0;
+  padding: 0 17px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.goToPage:hover {
+  background: #fff;
+}
+
+a {
+  color: #0bb697;
+  text-decoration: none;
 }
 
 img {
@@ -557,7 +583,21 @@ nav.fixed {
 }
 
 nav.mobile-fixed {
-  font-size: 26px;
+  font-weight: 300;
+}
+nav.mobile-fixed a.top {
+  float: left;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+nav.mobile-fixed .fa {
+  margin-right: 10px;
+  font-size: 20px;
+}
+nav.mobile-fixed h3 {
+  display: inline;
+  font-size: 15px;
 }
 nav.mobile-fixed .menu {
   float: right;
@@ -575,6 +615,7 @@ nav.mobile-fixed .menu svg {
   fill: #fff;
 }
 nav.mobile-fixed ul.mobile-nav {
+  font-size: 26px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -652,7 +693,6 @@ div.getStarted a:hover {
   width: 40px;
   display: inline-block;
   height: 40px;
-  padding-top: 10px;
   position: relative;
 }
 .scroll object svg.downArrow {
@@ -697,7 +737,7 @@ div.getStarted a:hover {
 
 @-webkit-keyframes arrow {
   from {
-    top: 10px;
+    top: 0px;
   }
   to {
     top: 20px;
@@ -705,7 +745,7 @@ div.getStarted a:hover {
 }
 @keyframes arrow {
   from {
-    top: 10px;
+    top: 0px;
   }
   to {
     top: 20px;
@@ -747,6 +787,42 @@ section.services {
 section.services div.col-7 {
   margin-bottom: 63px;
 }
+section.services .expand {
+  display: none;
+  width: auto;
+  max-width: 240px;
+  float: right;
+  color: #0bb697;
+  background: none;
+  border: 1px solid #0bb697;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 40px 0;
+  padding: 0 17px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: none;
+  width: 200px;
+  outline: none;
+  text-align: left;
+  margin-top: 0;
+}
+section.services .expand:hover {
+  background: #fff;
+}
+section.services .expand span {
+  margin-left: 10px;
+}
+section.services .expand h4 {
+  display: inline-block;
+}
+section.services #close-icon,
+section.services #close-icon + span {
+  display: none;
+}
 section.services .featured-services {
   width: 100%;
   display: block;
@@ -775,43 +851,36 @@ section.services .featured-services .description p {
   padding-right: 10%;
 }
 
-section.blog {
-  padding-bottom: 50px;
-}
-section.blog p {
-  margin-bottom: 41px;
-}
 section.blog div.ourBlog {
   display: inline-block;
   width: 50%;
   margin: 0;
 }
-section.blog .blogPage {
-  display: inline-block;
-  width: 49%;
-}
-section.blog .blogPage a.blog {
+section.blog a.blog {
   width: auto;
   max-width: 240px;
   float: right;
   color: #0bb697;
+  background: none;
   border: 1px solid #0bb697;
   text-decoration: none;
   font-weight: 300;
-  margin: 10% 0 10px 0;
+  margin: 40px 0;
   padding: 0 17px;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 0;
 }
-section.blog .blogPage a.blog:hover {
+section.blog a.blog:hover {
   background: #fff;
 }
 
 div.posts {
   width: 100%;
+  margin-top: 30px;
 }
 div.posts .post {
   width: 32.6%;
@@ -864,6 +933,7 @@ div.posts .post .teaser a {
 }
 div.posts .post .teaser a:hover {
   color: #0bb697;
+  background: none;
   border: 1px solid #0bb697;
   text-decoration: none;
   font-weight: 300;
@@ -872,6 +942,7 @@ div.posts .post .teaser a:hover {
 }
 div.posts .post .teaser a:active {
   color: #0bb697;
+  background: none;
   border: 1px solid #0bb697;
   text-decoration: none;
   font-weight: 300;
@@ -931,6 +1002,27 @@ section.portfolio div {
   display: inline-block;
   margin: 0;
   padding: 0;
+}
+section.portfolio a.viewPortfolio {
+  display: none;
+  width: auto;
+  max-width: 240px;
+  float: right;
+  color: #0bb697;
+  background: none;
+  border: 1px solid #0bb697;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 40px 0;
+  padding: 0 17px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.portfolio a.viewPortfolio:hover {
+  background: #fff;
 }
 section.portfolio .filter {
   width: 25%;
@@ -1175,6 +1267,33 @@ section.clients div.col-6 h2 {
   padding: 65px 0 15px 0;
   margin: 0;
 }
+section.clients .testimonial.mobile {
+  display: none;
+  float: none;
+  margin-top: 30px;
+}
+section.clients .viewClients {
+  margin: 0 auto;
+  width: auto;
+  max-width: 240px;
+  float: right;
+  color: #0bb697;
+  background: none;
+  border: 1px solid #0bb697;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 40px 0;
+  padding: 0 17px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+  display: none;
+}
+section.clients .viewClients:hover {
+  background: #fff;
+}
 
 .carousel-inner {
   position: relative;
@@ -1192,14 +1311,15 @@ section.clients div.col-6 h2 {
   -webkit-transition: opacity 0.6s ease-out;
   transition: opacity 0.6s ease-out;
 }
-.carousel-inner .testimonial {
+
+.testimonial {
   width: 50%;
   float: left;
   margin: 69px 0 116px 0;
   padding: 0;
   position: relative;
 }
-.carousel-inner .testimonial .client-photo {
+.testimonial .client-photo {
   display: inline-block;
   padding: 0;
   margin-right: 2%;
@@ -1209,13 +1329,13 @@ section.clients div.col-6 h2 {
   border: 6px solid #152028;
   overflow: hidden;
 }
-.carousel-inner .testimonial .quote {
+.testimonial .quote {
   display: inline-block;
   width: 65%;
   padding-right: 5px;
   border: none;
 }
-.carousel-inner .testimonial .quote p {
+.testimonial .quote p {
   font-size: 18px;
   font-weight: 300;
   color: #828282;
@@ -1223,14 +1343,14 @@ section.clients div.col-6 h2 {
   letter-spacing: 1px;
   margin-bottom: 8%;
 }
-.carousel-inner .testimonial .quote h3 {
+.testimonial .quote h3 {
   font: 16px;
   font-weight: 400;
   color: #0bb697;
   letter-spacing: 3px;
   margin: 0 0 10px 0;
 }
-.carousel-inner .testimonial .quote h4 {
+.testimonial .quote h4 {
   font-size: 12px;
   font-weight: 300;
   color: #828282;
@@ -1244,7 +1364,7 @@ section.clients div.col-6 h2 {
   margin: 0;
   padding: 0;
   position: relative;
-  top: -50px;
+  top: -100px;
   text-align: center;
   z-index: 10;
 }
@@ -1265,6 +1385,27 @@ section.clients div.col-6 h2 {
 
 .ourTeam .staff-members {
   margin: 58px 0 56px 0;
+}
+.ourTeam .goToPage {
+  display: none;
+  width: auto;
+  max-width: 240px;
+  float: right;
+  color: #0bb697;
+  background: none;
+  border: 1px solid #0bb697;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 40px 0;
+  padding: 0 17px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ourTeam .goToPage:hover {
+  background: #fff;
 }
 
 .member {
@@ -1343,8 +1484,19 @@ div.member.join div.profile-img svg.plus {
   position: absolute;
   top: 22%;
   left: 35%;
-  fill: #fff;
+  fill: #09997f;
   width: 30%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+div.member.join div.profile-img:hover {
+  background: #0bbd9d;
+}
+div.member.join div.profile-img:hover svg.plus {
+  fill: #0dd3af;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 div.member.join a.apply {
   padding: 9px 36px;
@@ -1357,6 +1509,7 @@ div.member.join a.apply {
 }
 div.member.join a.apply:hover {
   color: #0bb697;
+  background: none;
   border: 1px solid #0bb697;
   text-decoration: none;
   font-weight: 300;
@@ -1365,6 +1518,7 @@ div.member.join a.apply:hover {
 }
 div.member.join a.apply:active {
   color: #0bb697;
+  background: none;
   border: 1px solid #0bb697;
   text-decoration: none;
   font-weight: 300;
@@ -1382,6 +1536,33 @@ section.clients div.col-6 h2 {
   color: #fff;
   padding: 65px 0 15px 0;
   margin: 0;
+}
+section.clients .testimonial.mobile {
+  display: none;
+  float: none;
+  margin-top: 30px;
+}
+section.clients .viewClients {
+  margin: 0 auto;
+  width: auto;
+  max-width: 240px;
+  float: right;
+  color: #0bb697;
+  background: none;
+  border: 1px solid #0bb697;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 40px 0;
+  padding: 0 17px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+  display: none;
+}
+section.clients .viewClients:hover {
+  background: #fff;
 }
 
 .ourSkills {
@@ -1488,6 +1669,9 @@ section.contactInfo div.left div.map iframe {
   width: 480px;
   height: 600px;
 }
+section.contactInfo div.left h2 {
+  display: none;
+}
 section.contactInfo div.left p {
   font-size: 16px;
   color: #b8b8b8;
@@ -1560,6 +1744,7 @@ section.contactInfo div.right input[type=submit] {
 }
 section.contactInfo div.right input[type=submit]:hover {
   color: #0bb697;
+  background: none;
   border: 1px solid #0bb697;
   text-decoration: none;
   font-weight: 300;
@@ -1798,6 +1983,9 @@ section.contactInfo div.right input[type=submit]:focus {
   }
 }
 @media all and (max-width: 800px) {
+  section.blog {
+    padding-bottom: 50px;
+  }
   section.blog div.ourBlog {
     width: 75%;
   }
@@ -1807,6 +1995,9 @@ section.contactInfo div.right input[type=submit]:focus {
   section.blog .blogPage a.blog {
     margin-top: 0;
     margin-bottom: 20px;
+  }
+  section.blog a.blog {
+    margin-bottom: 40px;
   }
 
   div.posts .post {
@@ -1870,11 +2061,9 @@ section.contactInfo div.right input[type=submit]:focus {
 }
 @media all and (max-width: 760px) {
   section.ourSkills div.col-6 {
-    width: 70%;
     padding-top: 6%;
     margin: 0 auto;
     float: none;
-    text-align: center;
   }
   section.ourSkills div.col-6 p {
     width: 100%;
@@ -1893,7 +2082,6 @@ section.contactInfo div.right input[type=submit]:focus {
   section.ourSkills div.skills ul div {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
   }
   section.ourSkills div.skills ul div li {
     float: none;
@@ -1920,18 +2108,15 @@ section.contactInfo div.right input[type=submit]:focus {
     padding: 0;
   }
   section.contactInfo div.left div.map {
-    width: 100%;
-    height: 300px;
-    float: none;
-    margin-right: 0%;
-    margin-bottom: 10px;
-  }
-  section.contactInfo div.left div.map iframe {
-    width: 100%;
+    display: none;
   }
   section.contactInfo div.left .contact-details {
+    padding-top: 30px;
     width: 100%;
     float: none;
+  }
+  section.contactInfo div.left .contact-details h2 {
+    display: inline-block;
   }
   section.contactInfo div.right {
     margin-top: 30px;
@@ -1951,13 +2136,17 @@ section.contactInfo div.right input[type=submit]:focus {
     display: none;
   }
 
-  .scroll {
-    position: relative;
-    top: 10px;
+  header {
+    padding-bottom: 0;
   }
 
   nav.mobile-fixed {
     visibility: visible;
+  }
+
+  .scroll {
+    position: relative;
+    top: 10px;
   }
 
   div.col-7, div.col-6 {
@@ -1966,6 +2155,17 @@ section.contactInfo div.right input[type=submit]:focus {
 
   section.services div.col-7 {
     margin-bottom: 30px;
+  }
+  section.services h2 {
+    margin-top: 0;
+  }
+  section.services .expand,
+  section.services #expand-icon,
+  section.services #expand-icon + h4 {
+    display: inline-block;
+  }
+  section.services .featured-services {
+    display: none;
   }
   section.services .featured-services .feature {
     width: 100%;
@@ -1986,23 +2186,7 @@ section.contactInfo div.right input[type=submit]:focus {
   }
 
   div.posts .post {
-    margin-bottom: 30px;
-    margin: 0 auto;
-  }
-  div.posts .post:first-child {
-    width: 100%;
-    margin: 0 0 2% 0;
-    float: none;
-  }
-  div.posts .post:nth-child(2), div.posts .post:last-child {
-    width: 49%;
-  }
-  div.posts .post:nth-child(2) {
-    margin-right: 1%;
-  }
-  div.posts .post:last-child {
-    margin-bottom: 0;
-    float: right;
+    display: none;
   }
 }
 @media all and (max-width: 600px) {
@@ -2079,9 +2263,6 @@ section.contactInfo div.right input[type=submit]:focus {
     margin: 0 0 5% 0;
   }
 
-  section.clients {
-    padding-bottom: 50px;
-  }
   section.clients div.col-6 {
     width: 100%;
     margin: 0 auto;
@@ -2101,11 +2282,27 @@ section.contactInfo div.right input[type=submit]:focus {
   section.clients .testimonial .quote {
     padding: 4% 6% 0 6%;
   }
+  section.clients .carousel {
+    display: none;
+  }
   section.clients .carousel-indicators {
-    bottom: 0;
+    display: none;
+  }
+  section.clients .testimonial.mobile {
+    display: inline-block;
+  }
+  section.clients .viewClients {
+    display: inline-block;
   }
 }
 @media all and (max-width: 460px) {
+  section.portfolio .filter, section.portfolio .works {
+    display: none;
+  }
+  section.portfolio a.viewPortfolio {
+    display: inline-block;
+  }
+
   section.clients .testimonial {
     text-align: center;
   }
@@ -2154,8 +2351,11 @@ section.contactInfo div.right input[type=submit]:focus {
     margin-right: 0;
   }
 
-  .member {
-    width: 100%;
+  section.ourTeam .staff-members {
+    display: none;
+  }
+  section.ourTeam a.goToPage {
+    display: inline-block;
   }
 
   section.contactInfo {

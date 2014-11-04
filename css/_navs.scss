@@ -76,7 +76,21 @@ nav.fixed {
 }
 
 nav.mobile-fixed {
-	font-size: 26px;
+	font-weight: 300;
+	a.top {
+		float: left;
+		opacity: 0;
+		-webkit-transition: opacity 0.2s;
+		transition: opacity 0.2s;
+	}
+	.fa {
+		margin-right: 10px;
+		font-size: 20px;
+	}
+	h3 {
+		display: inline;
+		font-size: 15px;
+	}
 	.menu {
 		float: right;
 		width: 30px;
@@ -93,6 +107,7 @@ nav.mobile-fixed {
 		}
 	}
 	ul.mobile-nav {	
+		font-size: 26px;
 		position: absolute;
 		top: 100%;
 		left: 0;

@@ -7,6 +7,10 @@ section.portfolio {
 		margin: 0;
 		padding: 0;
 	}
+	a.viewPortfolio {
+		display: none;
+		@include goToPage;
+	}
 	.filter {
 		width: 25%;
 		float: right;

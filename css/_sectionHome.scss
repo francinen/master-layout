@@ -46,7 +46,6 @@ div.getStarted {
 		width: 40px;
 		display: inline-block;
 		height: 40px;
-		padding-top: 10px;
 		position: relative;
 		svg.downArrow {
 			width: 100%;
@@ -90,12 +89,12 @@ div.getStarted {
 }
 
 @-webkit-keyframes arrow {
-	from {top:10px;}
+	from {top:0px;}
 	to {top:20px;}
 }
 
 
 @keyframes arrow {
-	from {top:10px;}
+	from {top:0px;}
 	to {top:20px;}
 }
