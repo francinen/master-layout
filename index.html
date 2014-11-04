@@ -12,7 +12,7 @@
 </head>
 <body>
 	
-	<div class="bkg home">
+	<div class="bkg home" id="home">
 		<div class="wrapper">
 			<header class="clearfix">
 				<div class="col-12">
@@ -53,15 +53,9 @@
 			</header>
 			<section class="home" id="home">
 				<h2>Design just blows my mind</h2>
-				<p>Featuring the best design on the web Best of Blog Corporate CSS Design becoming like this is one of your goals, here are some general pointers.</p>
-				<div class="getStarted">
-					<a href="#">
-						Get Started Now
-					</a>
-				</div>
 				<div class="scroll">
 					<h4>Scroll down for more!</h4>
-						<object>
+						<object class="animated">
 						<svg class="downArrow" id="downArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 								<g id="Down">
 									<circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="50" cy="49.998" r="47"/>
@@ -70,6 +64,12 @@
 							</svg>
 						</object>
 				
+				</div>
+				<p>Featuring the best design on the web Best of Blog Corporate CSS Design becoming like this is one of your goals, here are some general pointers.</p>
+				<div class="getStarted">
+					<a href="#">
+						Get Started Now
+					</a>
 				</div>
 			</section>
 		</div><!-- /.wrapper -->
@@ -457,58 +457,100 @@
 					<h2>Our awesome clients</h2>
 					<p>More than 50K happy customers with our services</p>
 				</div>
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="testimonials clearfix">
-								<div class="testimonial">
-									<div class="client-photo">
-										<img src="assets/placeholders/profile.png">
-									</div>
-									<div class="quote">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
-										<h3>Michel Andrena</h3>
-										<h4>Company founder</h4>
-									</div>
-								</div><!-- /.testimonial -->
-								<div class="testimonial">
-									<div class="client-photo">
-										<img src="assets/placeholders/profile.png">
-									</div>
-									<div class="quote">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
-										<h3>Michel Andrena</h3>
-										<h4>Company founder</h4>
-									</div>
-								</div><!-- /.testimonial -->
-							</div><!-- /.testimonials -->
-						</li>
-						<li>
-							<div class="testimonials clearfix">
-								<div class="testimonial">
-									<div class="client-photo">
-										<img src="assets/placeholders/profile.png">
-									</div>
-									<div class="quote">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
-										<h3>Michel Andrena</h3>
-										<h4>Company founder</h4>
-									</div>
-								</div><!-- /.testimonial -->
-								<div class="testimonial">
-									<div class="client-photo">
-										<img src="assets/placeholders/profile.png">
-									</div>
-									<div class="quote">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
-										<h3>Michel Andrena</h3>
-										<h4>Company founder</h4>
-									</div>
-								</div><!-- /.testimonial -->
-							</div><!-- /.testimonials -->
-						</li>
-					</ul>
+				<div class="carousel">
+					<div class="carousel-inner">
+						<input class="carousel-view" type="radio" id="carousel-1" name="carousel" hidden checked="checked">
+						<div class="testimonials clearfix">
+							<div class="testimonial">
+								<div class="client-photo">
+									<img src="assets/placeholders/profile.png">
+								</div>
+								<div class="quote">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
+									<h3>Michel Andrena</h3>
+									<h4>Company founder</h4>
+								</div>
+							</div><!-- /.testimonial -->
+							<div class="testimonial">
+								<div class="client-photo">
+									<img src="assets/placeholders/profile.png">
+								</div>
+								<div class="quote">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
+									<h3>Michel Andrena</h3>
+									<h4>Company founder</h4>
+								</div>
+							</div><!-- /.testimonial -->
+						</div><!-- /.testimonials -->
+
+						<input class="carousel-view" type="radio" id="carousel-2" name="carousel" hidden>
+						<div class="testimonials clearfix">
+							<div class="testimonial">
+								<div class="client-photo">
+									<img src="assets/placeholders/profile.png">
+								</div>
+								<div class="quote">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
+									<h3>Client 4</h3>
+									<h4>Company founder</h4>
+								</div>
+							</div><!-- /.testimonial -->
+							<div class="testimonial">
+								<div class="client-photo">
+									<img src="assets/placeholders/profile.png">
+								</div>
+								<div class="quote">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do beiusmod</p>
+									<h3>Client 5</h3>
+									<h4>Company founder</h4>
+								</div>
+							</div><!-- /.testimonial -->
+						</div><!-- /.testimonials -->
+
+						<input class="carousel-view" type="radio" id="carousel-3" name="carousel" hidden>
+						<div class="testimonials clearfix">
+							<div class="testimonial">
+								<div class="client-photo">
+									<img src="assets/placeholders/profile.png">
+								</div>
+								<div class="quote">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa blanditiis nisi necessitatibus, accusamus voluptatibus ex? </p>
+									<h3>Client 6</h3>
+									<h4>Company founder</h4>
+								</div>
+							</div><!-- /.testimonial -->
+							<div class="testimonial">
+								<div class="client-photo">
+									<img src="assets/placeholders/profile.png">
+								</div>
+								<div class="quote">
+									<p>Aliquam iste nesciunt, cumque repellat asperiores error magni neque, ipsum necessitatibus, pariatur consectetur voluptatibus nemo!</p>
+									<h3>Client 7</h3>
+									<h4>Company founder</h4>
+								</div>
+							</div><!-- /.testimonial -->
+						</div><!-- /.testimonials -->
+
+						
+					</div>
 				</div>
+				<ol class="carousel-indicators">
+					<li>
+						<label for="carousel-1">
+							<i class="fa fa-circle bullet"></i>
+						</label>
+					</li>
+					<li>
+						<label for="carousel-2">
+							<i class="fa fa-circle bullet"></i>
+						</label>
+					</li>
+					<li>
+						<label for="carousel-3">
+							<i class="fa fa-circle bullet"></i>
+						</label>
+					</li>
+				</ol>
 			</section>
 		</div><!-- /.wrapper -->
 	</div><!-- /.bkg -->
@@ -918,7 +960,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/modernizr.custom.63321.js"></script>
 	<script src="js/jquery.smooth-scroll.js"></script>
-	<script src="js/flexslider/jquery.flexslider-min.js"></script>
 	<script src="js/stkr.js"></script>
 	<script src="js/script.js"></script>
 

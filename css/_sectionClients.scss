@@ -1,5 +1,6 @@
 
 section.clients {
+	padding-top: 0;
 	div.col-6 {
 		@include push(3);
 		text-align: center;

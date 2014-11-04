@@ -11,8 +11,8 @@
  	.testimonials {
  		position: absolute;
  		opacity: 0;
-		-webkit-transition: opacity 1s ease-out;
-		transition: opacity 1.5s ease-out;
+		-webkit-transition: opacity 0.6s ease-out;
+		transition: opacity 0.6s ease-out;
  	}
 	.testimonial {
 		width: 50%;
@@ -63,32 +63,30 @@
 		// /.quote
 	}
 	// /.testimonial
-	.carousel-indicators {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		position: absolute;
-		bottom: 15%;
-		left: 0;
-		right: 0;
-		text-align: center;
-		z-index: 10;
-		li {
-			display: inline-block;
-			margin: 0 5px;
-			.bullet {
-				color: #fff;
-				cursor: pointer;
-				display: block;
-				font-size: 1.6em;
-				margin-right: 20px;
-				&:hover, &:active {
-					color: #aaaaaa;
-				}
-			}
-		}
-		// /li
-	}
-	// /.carousel-indicators
 }
 // /.carousel-inner
+.carousel-indicators {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -50px;
+	text-align: center;
+	z-index: 10;
+	li {
+		display: inline-block;
+		margin: 0 5px;
+		.bullet {
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			font-size: 1.6em;
+			margin-right: 20px;
+			&:hover, &:active {
+				color: #aaaaaa;
+			}
+		}
+	}
+	// /li
+}
+// /.carousel-indicators

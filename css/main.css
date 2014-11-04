@@ -217,8 +217,12 @@ div.col-6 {
   margin: 0;
 }
 
+section {
+  padding-top: 50px;
+}
+
 section h2 {
-  margin-bottom: 24px;
+  margin-bottom: 0 0 24px;
   font-size: 28px;
   font-weight: 300;
   color: #828282;
@@ -299,7 +303,7 @@ img {
 }
 
 header {
-  padding: 0;
+  padding: 30px 0;
   position: relative;
 }
 
@@ -602,11 +606,13 @@ section.home {
 section.home p {
   font-size: 20px;
   color: #8a97a5;
+  margin-top: 25px;
 }
 section.home h2 {
   font-size: 48px;
   color: #fff;
   padding: 10px;
+  margin: 0;
 }
 
 div.getStarted {
@@ -920,7 +926,6 @@ section.portfolio {
   display: inline-block;
   float: none;
   margin: 0;
-  padding: 0;
 }
 section.portfolio div {
   display: inline-block;
@@ -1059,6 +1064,10 @@ section.portfolio .work h5 {
   color: #b8b8b8;
 }
 
+section#stats {
+  padding-top: 0;
+}
+
 .highlights {
   width: 100%;
   margin: 0;
@@ -1153,6 +1162,9 @@ section.support a.getStarted:hover, section.support a.getStarted:active {
   transition: all 0.3s;
 }
 
+section.clients {
+  padding-top: 0;
+}
 section.clients div.col-6 {
   margin-left: 26.04167%;
   text-align: center;
@@ -1177,8 +1189,8 @@ section.clients div.col-6 h2 {
 .carousel-inner .testimonials {
   position: absolute;
   opacity: 0;
-  -webkit-transition: opacity 1s ease-out;
-  transition: opacity 1.5s ease-out;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
 }
 .carousel-inner .testimonial {
   width: 50%;
@@ -1226,29 +1238,28 @@ section.clients div.col-6 h2 {
   margin: 0;
   font-style: italic;
 }
-.carousel-inner .carousel-indicators {
+
+.carousel-indicators {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: absolute;
-  bottom: 15%;
-  left: 0;
-  right: 0;
+  position: relative;
+  top: -50px;
   text-align: center;
   z-index: 10;
 }
-.carousel-inner .carousel-indicators li {
+.carousel-indicators li {
   display: inline-block;
   margin: 0 5px;
 }
-.carousel-inner .carousel-indicators li .bullet {
+.carousel-indicators li .bullet {
   color: #fff;
   cursor: pointer;
   display: block;
   font-size: 1.6em;
   margin-right: 20px;
 }
-.carousel-inner .carousel-indicators li .bullet:hover, .carousel-inner .carousel-indicators li .bullet:active {
+.carousel-indicators li .bullet:hover, .carousel-indicators li .bullet:active {
   color: #aaaaaa;
 }
 
@@ -1359,6 +1370,9 @@ div.member.join a.apply:active {
   font-weight: 300;
 }
 
+section.clients {
+  padding-top: 0;
+}
 section.clients div.col-6 {
   margin-left: 26.04167%;
   text-align: center;
@@ -1372,7 +1386,7 @@ section.clients div.col-6 h2 {
 
 .ourSkills {
   margin: 0;
-  padding: 0 0 86px 0;
+  padding-bottom: 86px;
 }
 .ourSkills div {
   float: left;
@@ -1643,6 +1657,9 @@ section.contactInfo div.right input[type=submit]:focus {
     width: 100%;
     margin: 0 auto;
     padding-top: 30px;
+  }
+  section.clients .carousel {
+    height: 485px;
   }
   section.clients .testimonials {
     padding: 30px 0 0 0;
@@ -1947,10 +1964,6 @@ section.contactInfo div.right input[type=submit]:focus {
     width: 80%;
   }
 
-  section div.col-7 h2 {
-    margin-top: 10%;
-  }
-
   section.services div.col-7 {
     margin-bottom: 30px;
   }
@@ -1993,8 +2006,12 @@ section.contactInfo div.right input[type=submit]:focus {
   }
 }
 @media all and (max-width: 600px) {
+  section.home {
+    padding-top: 0;
+  }
+
   section.home h2 {
-    margin: 35px 0;
+    padding: 0;
     font-size: 36px;
     line-height: 42px;
   }
@@ -2003,7 +2020,7 @@ section.contactInfo div.right input[type=submit]:focus {
     width: 60%;
   }
   .scroll h4 {
-    color: rgba(255, 255, 255, 0.8);
+    display: none;
   }
   .scroll svg.downArrow circle {
     stroke: rgba(255, 255, 255, 0.8);

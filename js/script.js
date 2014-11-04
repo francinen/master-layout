@@ -32,6 +32,16 @@ $(function(){
 	}
 
 	$(document).scroll(function(){
+		var y = $(this).scrollTop();
+
+		var home = $('#home').position();
+		var homeBottom = home.top+$('#home').height();
+		if (y > homeBottom) {
+			$('.scroll').find('object').removeClass('animated');
+		}else{
+			$('.scroll').find('object').addClass('animated');
+		}
+
 		var services = $('#services').position();
 		var servicesTop = services.top;
 		var servicesBottom = servicesTop+$('#services').height();
@@ -97,6 +107,4 @@ $(function(){
 	$('.no-filter').click(function(){
 		$('div.work.all').show();
 	});
-
-	$('.flexslider').flexslider();
 });
