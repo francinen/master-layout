@@ -5,10 +5,16 @@ section.tweets {
 	margin: 0 auto;
 	padding: 70px 0;
 	text-align: center;
-	svg {
-		fill: #fff;
+	object {
 		width: 95px;
-		padding-bottom: 36px;
+		height: 82px;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		svg {
+			fill: #fff;
+			width: 100%;
+		}
 	}
 	h2 {
 		font-size: 21px;

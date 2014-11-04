@@ -9,11 +9,17 @@ header {
 	float: left;
 	margin-right: 0;
 	border: $guide;
-	svg.square {
+	object {
 		width: 10px;
-		fill: $teal;
+		display: inline-block;
+		height: auto;
 		position: relative;
-		bottom: -3px;
+		bottom: -2px;
+		svg.square {
+			width: 100%;
+			height: 100%;
+			fill: $teal;
+		}
 	}
 	h1 {
 		margin-bottom: 0;
@@ -31,10 +37,13 @@ header {
 	}
 }
 
+header nav {
+	float: right;
+}
+
 nav {
 	margin: 0;
 	padding: 39px 0 0 0;
-	float: right;
 	border: $guide;
 	ul {	
 		margin: 0;
@@ -50,22 +59,53 @@ nav {
 	// /.getStarted-btn
 }
 
-nav.fixed {
+nav.fixed,
+nav.mobile-fixed {
+	background: rgba(0,0,0,0.9);
+	visibility: hidden;
 	float: none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	padding: 10px;
-	background: rgba(0,0,0,0.7);
-	display:none;
+	height: 50px;
 	-webkit-transition: opacity 0.4s;
 	transition: opacity 0.4s;
-	z-index: 100;
+	z-index: 1000;
+}
+
+nav.mobile-fixed {
 	.menu {
 		float: right;
 		width: 30px;
 		height: 30px;
-		background: #fff;
+		position: relative;
+		display: inline-block;
+		svg {
+			position: absolute;
+			top: 0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			fill: #fff;
+		}
+	}
+	ul.mobile-nav {	
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		margin: 0;
+		padding: 0 0 20px;
+		li {
+			list-style-type: none;
+			text-align: center;
+			padding: 15px 0;
+			width: 100%;
+			background: rgba(0,0,0,0.85);
+			border-bottom: 1px solid #161616;
+		
+		}
 	}
 }

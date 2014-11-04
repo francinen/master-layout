@@ -105,14 +105,22 @@ section.portfolio {
 				opacity: 0;
 			}
 			// /.overlay
-			svg.zoom {
-				position: absolute;
-				top: 41%;
-				left: 40%;
-				z-index:20;
+			object {
 				width: 20%;
-				fill: #fff;
-				opacity: 0;
+				display: inline-block;
+				height: 20%;
+				position: absolute;
+				top: 40%;
+				left: 40%;
+				svg.zoom {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index:20;
+					width: 100%;
+					fill: #fff;
+					opacity: 0;
+				}
 			}
 			&:hover div.overlay,
 			&:hover svg.zoom {
