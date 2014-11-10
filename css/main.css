@@ -591,7 +591,7 @@ nav.mobile-fixed a.top {
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-nav.mobile-fixed .fa {
+nav.mobile-fixed .fa-arrow-circle-o-up {
   margin-right: 10px;
   font-size: 20px;
 }
@@ -599,20 +599,12 @@ nav.mobile-fixed h3 {
   display: inline;
   font-size: 15px;
 }
-nav.mobile-fixed .menu {
+nav.mobile-fixed #menu {
   float: right;
-  width: 30px;
-  height: 30px;
+  font-size: 30px;
+  color: #fff;
   position: relative;
   display: inline-block;
-}
-nav.mobile-fixed .menu svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  fill: #fff;
 }
 nav.mobile-fixed ul.mobile-nav {
   font-size: 26px;

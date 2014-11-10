@@ -82,11 +82,17 @@ $(function(){
 		}
 	});
 
-	$('.menu').on('click', function(){
+	$('#menu').on('click', function(){
 		$('.mobile-nav').slideToggle('slow');
+		$('#menu').toggleClass('fa-bars');
+		$('#menu').toggleClass('fa-times');
+
 	});
 	$('.mobile-nav').find('li').on('click',function(){
 		$('.mobile-nav').slideToggle(500);
+		$('#menu').removeClass('fa-times');
+		$('#menu').addClass('fa-bars');
+		
 	});
 
 	$('.services').find('.expand').click(function(){
