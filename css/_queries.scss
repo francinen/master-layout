@@ -10,15 +10,15 @@
 			height: 485px;
 		}
 		.testimonials {
-			padding: 30px 0 0 0;
+			padding: 30px 40px;
 			margin: 0 auto;
 		}
 		.testimonial {
 			width: 50%;
 			margin:0 0 116px 0;
 			text-align: center;
-			div.client-photo {
-				margin: 0;
+			.client-photo {
+				width: 45%;
 			}
 			.quote {
 				padding: 4% 5% 0 5%;
@@ -251,6 +251,14 @@
 			}
 		}
 	}
+	section.clients {
+		.testimonial {
+			.client-photo {
+				width: 60%;
+			}
+		}
+	}
+
 }
 // /780px
 
@@ -306,6 +314,13 @@
 // /750px
 
 @media all and (max-width: 720px) {
+	section.clients {
+		.testimonial {
+			.client-photo {
+				width: 70%;
+			}
+		}
+	}
 	section.contactInfo {
 		padding: 20px 0;
 

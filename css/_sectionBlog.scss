@@ -28,9 +28,16 @@ div.posts {
 		}
 		.post-thumb {
 			height: 180px;
-			background: url(../assets/placeholders/blog.png) no-repeat center center;
-			@include cover-bkg;
+			width: 100%;
+			// @include cover-bkg;
 		}
+		
+		// .post2 {
+		// 	background: url(../assets/placeholder/photo9.jpg) no-repeat center center;
+		// }
+		// .post3 {
+		// 	background: url(../assets/placeholder/photo10.jpg) no-repeat center center;
+		// }
 		.teaser {
 			padding: 18px 22px;
 			border: $guide;

@@ -17,19 +17,23 @@
 }
 .testimonial {
 	width: 50%;
+	height: 320px;
 	float: left;
 	margin: 69px 0 116px 0;
 	padding: 0;
 	position: relative;
+	text-align: center;
 	.client-photo {
 		display: inline-block;
+		width: 40%;
 		padding: 0;
 		margin-right: 2%;
 		vertical-align: top;
-		border-radius: 100%;
+		border-radius: 50%;
 		background: #eaeaea;
 		border: 6px solid #152028;
 		overflow: hidden;
+		margin-bottom: 15px;
 	}
 	// /.client-photo
 	.quote {
@@ -37,6 +41,7 @@
 		width: 65%;
 		padding-right: 5px;
 		border: $guide;
+		text-align: left;
 		p {
 			font-size: 18px;
 			font-weight: 300;
@@ -70,7 +75,7 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
-	top: -100px;
+	top: -50px;
 	text-align: center;
 	z-index: 10;
 	li {

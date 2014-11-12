@@ -92,8 +92,8 @@ section.portfolio {
 		.thumb {
 			position: relative;
 			width: 100%;
-			background: url(../assets/placeholders/portfolio.png) no-repeat center center;
-			@include cover-bkg;
+			// background: url(../assets/placeholders/portfolio.png) no-repeat center center;
+			// @include cover-bkg;
 			padding: 50%;
 			overflow: hidden;
 			div.overlay {
@@ -127,9 +127,30 @@ section.portfolio {
 			}
 			&:hover div.overlay,
 			&:hover svg.zoom {
-				opacity: 0.8;
+				opacity: 0.3;
 				@include hover(all,0.5s)
 			}
+			&:hover + h3 {
+				color: $teal;
+			}
+		}
+		.thumb1 {
+			background: url(../assets/placeholders/photo1.jpg) no-repeat center center;
+		}
+		.thumb2 {
+			background: url(../assets/placeholders/photo2.jpg) no-repeat center center;
+		}
+		.thumb3 {
+			background: url(../assets/placeholders/photo3.jpg) no-repeat center center;
+		}
+		.thumb4 {
+			background: url(../assets/placeholders/photo7.jpg) no-repeat center center;
+		}
+		.thumb5 {
+			background: url(../assets/placeholders/photo4.jpg) no-repeat center center;
+		}
+		.thumb6 {
+			background: url(../assets/placeholders/photo6.jpg) no-repeat center center;
 		}
 		// /.thumb 
 		h3 {

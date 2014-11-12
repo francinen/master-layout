@@ -887,11 +887,7 @@ div.posts .post:last-child {
 }
 div.posts .post .post-thumb {
   height: 180px;
-  background: url(../assets/placeholders/blog.png) no-repeat center center;
   width: 100%;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 div.posts .post .teaser {
   padding: 18px 22px;
@@ -1094,11 +1090,6 @@ section.portfolio .work {
 section.portfolio .work .thumb {
   position: relative;
   width: 100%;
-  background: url(../assets/placeholders/portfolio.png) no-repeat center center;
-  width: 100%;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   padding: 50%;
   overflow: hidden;
 }
@@ -1131,9 +1122,30 @@ section.portfolio .work .thumb object svg.zoom {
   opacity: 0;
 }
 section.portfolio .work .thumb:hover div.overlay, section.portfolio .work .thumb:hover svg.zoom {
-  opacity: 0.8;
+  opacity: 0.3;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+section.portfolio .work .thumb:hover + h3 {
+  color: #0bb697;
+}
+section.portfolio .work .thumb1 {
+  background: url(../assets/placeholders/photo1.jpg) no-repeat center center;
+}
+section.portfolio .work .thumb2 {
+  background: url(../assets/placeholders/photo2.jpg) no-repeat center center;
+}
+section.portfolio .work .thumb3 {
+  background: url(../assets/placeholders/photo3.jpg) no-repeat center center;
+}
+section.portfolio .work .thumb4 {
+  background: url(../assets/placeholders/photo7.jpg) no-repeat center center;
+}
+section.portfolio .work .thumb5 {
+  background: url(../assets/placeholders/photo4.jpg) no-repeat center center;
+}
+section.portfolio .work .thumb6 {
+  background: url(../assets/placeholders/photo6.jpg) no-repeat center center;
 }
 section.portfolio .work h3 {
   margin: 34px 0 21px 0;
@@ -1306,26 +1318,31 @@ section.clients .viewClients:hover {
 
 .testimonial {
   width: 50%;
+  height: 320px;
   float: left;
   margin: 69px 0 116px 0;
   padding: 0;
   position: relative;
+  text-align: center;
 }
 .testimonial .client-photo {
   display: inline-block;
+  width: 40%;
   padding: 0;
   margin-right: 2%;
   vertical-align: top;
-  border-radius: 100%;
+  border-radius: 50%;
   background: #eaeaea;
   border: 6px solid #152028;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 .testimonial .quote {
   display: inline-block;
   width: 65%;
   padding-right: 5px;
   border: none;
+  text-align: left;
 }
 .testimonial .quote p {
   font-size: 18px;
@@ -1356,7 +1373,7 @@ section.clients .viewClients:hover {
   margin: 0;
   padding: 0;
   position: relative;
-  top: -100px;
+  top: -50px;
   text-align: center;
   z-index: 10;
 }
@@ -1413,7 +1430,6 @@ section.clients .viewClients:hover {
 .member .profile-img {
   width: 180px;
   height: 180px;
-  background: #f9f9f9;
   border: 7px solid #f8f1f1;
   border-radius: 100%;
   margin: 0 auto;
@@ -1839,7 +1855,7 @@ section.contactInfo div.right input[type=submit]:focus {
     height: 485px;
   }
   section.clients .testimonials {
-    padding: 30px 0 0 0;
+    padding: 30px 40px;
     margin: 0 auto;
   }
   section.clients .testimonial {
@@ -1847,8 +1863,8 @@ section.contactInfo div.right input[type=submit]:focus {
     margin: 0 0 116px 0;
     text-align: center;
   }
-  section.clients .testimonial div.client-photo {
-    margin: 0;
+  section.clients .testimonial .client-photo {
+    width: 45%;
   }
   section.clients .testimonial .quote {
     padding: 4% 5% 0 5%;
@@ -2050,6 +2066,10 @@ section.contactInfo div.right input[type=submit]:focus {
   section.ourSkills div.col-6 p {
     width: 90%;
   }
+
+  section.clients .testimonial .client-photo {
+    width: 60%;
+  }
 }
 @media all and (max-width: 760px) {
   section.ourSkills div.col-6 {
@@ -2092,6 +2112,10 @@ section.contactInfo div.right input[type=submit]:focus {
   }
 }
 @media all and (max-width: 720px) {
+  section.clients .testimonial .client-photo {
+    width: 70%;
+  }
+
   section.contactInfo {
     padding: 20px 0;
   }
